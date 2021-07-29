@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html">
+
+<head>
+    <meta name="keywords" content="gimnasio, gym, crossfit, funcional, zumba, jump, musculacion">
+    <title>Contacto/Breaking Goals</title>
+    <meta name="description" content="Comunicate con nosotros asi te podemos brindar la mejor informacion posible. No dudes en mandarnos tu consulta.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div>
+           <img src="img/logo.png" class="header__img" alt="logo">
+        </div>  
+     </header>   
+    
+     <nav class="nav">   
+        <ul class="nav__menu">
+           <li><a href="index.html" class="nav__enlace">Home</a></li>
+           <li><a href="nosotros.html" class="nav__enlace">Nosotros</a></li>
+           <li><a href="entrenamientos.html" class="nav__enlace">Entrenamientos</a></li>
+           <li><a href="planes.html" class="nav__enlace">Planes</a></li>
+           <li><a href="contacto.html" class="nav__enlace--active">Contacto</a></li>
+        </ul>
+     </nav>
+
+    <div class="contacto">
+        <h1 class="contacto__titulo">Contacto</h1>  
+    </div>
+
+    <section class="formulario">
+        <h2 class="formulario__subtitulo">Consulta/Informacion</h2>
+        <div class="divContenedor">
+        <form action="" class="form">
+            <input class="form__input" type="text" name="Nombre" placeholder="Nombre">
+            <input  class="form__input" type="text" name="Apellido" placeholder="Apellido">
+            <input  class="form__input" type="email" name="Email" placeholder="Email">
+            <input  class="form__input" type="tel" name="tel/cel" placeholder="Tel/cel">
+            
+            <div class="actividad">Estoy interesado/a por:</div>
+            <select class="actividad__select" name="Actividad">
+                <option value="1">Funcional</option>
+                <option value="2">Crossfit</option>
+                <option value="3">Strong zumba</option> 
+                <option value="4">Levantamiento olimpico</option>
+            </select>
+            
+            
+            <div class="lesion">Posee alguna lesion</div>
+                <div>
+                    <input class="lesion__input" type="checkbox" name="Muscular" value="Muscular">
+                    <label class="lesion__label" for="Muscular "> Muscular </label>
+                </div>
+                <div>
+                    <input class="lesion__input" type="checkbox" name="Ligamentosa" value="Ligamentosa">
+                    <label class="lesion__label" for="Ligamentosa">Ligamentosa</label>
+                </div>
+                <div>
+                    <input class="lesion__input" type="checkbox" name="Fractura osea" value="Fractura osea">
+                    <label class="lesion__label" for="Fractura osea">Fractura osea</label>
+                </div>
+                <div>
+                    <input class="lesion__input" type="checkbox" name="Operaciones" value="Operaciones">
+                    <label class="lesion__label" for="Operaciones">Operaciones</label>
+                </div>
+                <div>
+                    <input class="lesion__input" type="checkbox" name="Enfermedades de columna" value="Enfermedades de columna">
+                    <label class="lesion__label" for="Enfermedades de columna">Enfermedades de columna</label>
+                </div>
+
+            <label for="Consulta" class="consulta">Consulta:</label>
+            <textarea class="textarea" name="Consulta" cols="30" rows="10"></textarea>
+                
+            <input class="enviar" type="submit" value="Enviar">
+            <input class="limpiar" type="reset" value="Limpiar">
+        </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Breaking Goals 2021</p>
+     </footer>
+
+</body>
+
+</html>
