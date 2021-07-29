@@ -1,0 +1,26 @@
+@mixin flex ($flex, $column, $aicenter, $jccenter){
+    display: $flex;
+    flex-direction: $column;
+    align-items: $aicenter;
+    justify-content: $jccenter;
+}
+.header {
+    background-image: $fondoPrincipal;
+    height: auto;
+    @include flex (flex, column, center, center);
+    
+    .header__img {
+       width: 110px;
+       margin-top: 20px; 
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width:1024px) {
+    .header {    
+        .header__img {
+        width: 200px;
+        margin-bottom: 10px;
+        }
+    }    
+}

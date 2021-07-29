@@ -1,0 +1,57 @@
+@mixin flex ($flex, $column, $aicenter){
+    display: $flex;
+    flex-direction: $column;
+    align-items: $aicenter;
+}
+@mixin row ($row, $jcse) {
+    flex-direction: $row;
+    justify-content: $jcse;
+}
+.nav {
+    background-color: $fondoSecundario;
+    font-size: 16px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+
+    .nav__menu {
+        height: auto;
+        list-style: none;
+        @include flex (flex, column, center);
+                        
+        .nav__enlace {
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+            margin: 5px;
+
+            &:hover {
+                color:$amarillo;
+            }
+        }
+        .nav__enlace--active {
+            color: $amarillo;
+            font-weight: bold;
+            text-decoration: none;            
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .nav {
+        font-size: 20px;
+        .nav__menu {
+            @include row (row, space-evenly);
+        }
+    }
+}
+@media (min-width:1024px) {
+    .nav {
+        font-size: 24px;
+
+        .nav__menu {
+            @include row (row, space-evenly);
+        }
+    }
+}

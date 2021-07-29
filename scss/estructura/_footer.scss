@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    height: auto;
+    background-image: $fondoPrincipal;
+    margin-top: 18px;
+
+    .footer__texto {
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+    font-style: italic;
+    }
+}    
+/* MEDIA QUERIES */    
+@media (min-width:1024px) {
+    .footer {
+        margin-top: 60px;
+
+        .footer__texto {
+            font-size: 24px;
+            margin: 12px;
+        }
+    }
+}   

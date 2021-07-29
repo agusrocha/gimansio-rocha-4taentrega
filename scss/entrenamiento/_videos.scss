@@ -1,0 +1,79 @@
+@mixin flex ($flex, $column){
+    display: $flex;
+    flex-direction: $column;
+}
+.sectionEntrenamiento {
+    margin: 30px;
+}
+.articleEntrenamiento {
+    @include flex (flex, column);
+
+    .articleEntrenamiento__titulo {
+        font-size: 24px;
+        text-align: center;
+        color: $colorPrincipal;
+    }
+}
+.divEntrenamiento {
+    @include flex (flex, column);
+    align-items: center;
+    margin: 50px 0;
+
+    .divEntrenamiento__subtitulo {
+       font-size: 20px;
+       color: $azul;
+       margin-bottom: 20px; 
+    }
+
+    .divEntrenamiento__texto {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
+.videoContainer {
+    width: 90%;
+    height: 350px;
+}
+/* MEDIA QUERIES */
+@media (min-width: 600px) and (max-width: 1023px){
+    .articleEntrenamiento {
+        .articleEntrenamiento__titulo {
+            font-size: 30px;
+        }
+    }
+    .divEntrenamiento {
+        .divEntrenamiento__subtitulo {
+            font-size: 24px;
+        }
+        .divEntrenamiento__texto {
+            font-size: 20px;
+            margin: 5px 12%;
+        }
+    }
+    .videoContainer {
+        width: 75%;
+        margin-top: 10%;
+    }
+}
+@media (min-width:1024px) {
+    .articleEntrenamiento {
+        .articleEntrenamiento__titulo {
+            font-size: 40px;
+        }
+    }
+    .divEntrenamiento {
+        .divEntrenamiento__subtitulo {
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .divEntrenamiento__texto {
+        font-size: 24px;
+        margin: 5px 12%;
+        }
+    }
+    .videoContainer {
+        width: 65%;
+        height: 60vh;
+        margin-top: 5%;
+    }    
+}

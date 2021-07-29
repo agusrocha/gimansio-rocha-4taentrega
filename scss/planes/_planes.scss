@@ -1,0 +1,102 @@
+@mixin flex ($flex, $column, $aicenter) {
+    display: $flex;
+    flex-direction: $column;
+    align-items: $aicenter;
+}
+.planes {
+    @include flex (flex, column, none);
+    height: auto;
+    margin: 10px;
+    .planes__titulo {
+        font-size: 24px;
+        text-align: center;
+        color: $colorPrincipal;
+        margin-top: 15px;
+    }
+}
+.principalPlanes {
+    @include flex (flex, column, center);
+    .principalPlanes__div {
+        width: 80%;
+        height: auto;
+        margin: 40px 70px;
+        background-color: $fondoSecundario;
+        text-align: center;
+    }
+    .principalPlanes__subtitulo {
+        font-size: 18px;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+}
+.secundarioPlanes {
+    background-image: $fondoPrincipal;
+    margin: 20px 10px;
+    padding: 10px;
+    @include flex (flex, column, center);
+    .secundarioPlanes__precio {
+        color: white;
+        font-size: 20px;
+    }
+    .secundarioPlanes__texto {
+        color: white;
+        font-size: 12px;
+    }
+}
+/* MEDIA QUERIES */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .planes{
+        .planes__titulo {
+            font-size: 30px;
+        }
+    }
+    .principalPlanes {
+        .principalPlanes__div {
+            .principalPlanes__subtitulo {
+                font-size: 24px;
+            }
+        }
+    }
+    .secundarioPlanes {
+        margin: 35px 45px;
+        padding-top: 15px;
+        .secundarioPlanes__precio {
+            font-size: 26px;
+        }
+        .secundarioPlanes__texto {
+            font-size: 18px;
+        }
+    }
+}
+@media (min-width:1024px) {
+    .planes {
+        .planes__titulo {
+            font-size: 40px;
+            margin: 30px 5%;
+        }
+    }
+    .principalPlanes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        .principalPlanes__div {
+            width: 45%;
+            margin: 50px 20px;
+        }
+        .principalPlanes__subtitulo {
+            font-size: 32px;
+        }
+    }
+    .secundarioPlanes {
+        padding-top: 18px;
+        margin: 20px 10%;
+        .secundarioPlanes__precio {
+            font-size: 28px;
+        }
+        .secundarioPlanes__texto {
+            font-size: 22px;
+        }
+    }
+}

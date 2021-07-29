@@ -1,0 +1,60 @@
+.cuidadosPrincipal {
+    margin-top: 16px;
+
+    .cuidadosPrincipal__contenedor {
+        text-align: center;
+    }
+
+    .cuidadosPrincipal__titulo {
+        color: $colorPrincipal;
+        font-size: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}
+.cuidadosSecundario {
+    margin: 20px 70px;
+    text-align: center;
+    border: solid 2px $fondoSecundario;
+
+    .cuidadosSecundario__titulo {
+        font-size: 20px;
+
+        .cuidadosSecundario__titulo--color {
+            color: $fondoSecundario;
+            font-weight:bolder ;
+        }
+    }
+
+    .cuidadosSecundario__texto {
+        font-size: 16px;
+        letter-spacing: 2px;
+
+        .cuidadosSecundario__texto--negrita {
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width:1024px) {
+    .cuidadosPrincipal {
+        margin-top: 0;
+
+        .cuidadosPrincipal__titulo {
+            font-size: 36px;
+        }
+    }
+
+    .cuidadosSecundario {
+        margin: 30px 220px;
+
+        .cuidadosSecundario__titulo {
+            font-size: 32px;
+        }
+
+        .cuidadosSecundario__texto {
+            font-size: 26px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@import 'bases/colores';
+@import 'estructura/header';
+@import 'estructura/menu';
+@import 'estructura/footer';
+@import 'home/seccionportada';
+@import 'home/seccionprincipal';
+@import 'home/asidehome';
+@import 'home/seccioncuidados';
+@import 'home/grilla';
+@import 'nosotros/nosotros';
+@import 'entrenamiento/videos';
+@import 'planes/planes';
+@import 'contacto/contacto';
